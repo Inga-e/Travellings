@@ -1,0 +1,48 @@
+.slider-buttons {
+  display: flex;
+  width: 78px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.slider-buttons__button {
+  background-color: $color-navy-blue;
+  width: 37px;
+  height: 35px;
+  border: none;
+  color: $color-default-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-default-white;
+    width: 37px;
+    height: 35px;
+    border: 1px solid $color-resolution-blue;
+    color: $color-resolution-blue;
+  }
+
+  &:focus-visible {
+    background-color: transparent;
+    width: 37px;
+    height: 35px;
+    border: 1px solid $color-resolution-blue;
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+    border: none;
+    color: $color-default-white;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+  }
+
+  &--forward {
+    transform: rotate(180deg);
+  }
+}
