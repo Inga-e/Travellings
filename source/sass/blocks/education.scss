@@ -48,17 +48,19 @@
   span {
     position: absolute;
     left: 0;
-    bottom: 1px;
+    bottom: 5px;
     font-size: 35px;
     line-height: 100%;
     font-weight: $font-weight-extrabold;
     
     @include vp-1199 {
       font-size: 25px;
+      bottom: 3px;
     }
 
     @include vp-767 {
       font-size: 22px;
+      bottom: 1px;
     }
   }
 }
@@ -471,7 +473,7 @@
         height: 1px;
         background-color: $color-navy-blue;
         left: 0;
-        bottom: calc(100% - 9px);
+        bottom: calc(100% + 9px);
       }
 
       @include vp-767 {
