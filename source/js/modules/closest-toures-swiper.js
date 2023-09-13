@@ -3,8 +3,8 @@ const swiperClosestToures = function () {
   new Swiper('.closest-tours__swiper', {
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.closest-tours__swiper-button-next',
+      prevEl: '.closest-tours__swiper-button-prev',
     },
 
     breakpoints: {

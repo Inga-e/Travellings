@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {swiperClosestToures} from './modules/closest-toures-swiper';
+import {swiperInstructors} from './modules/education-swiper';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     swiperClosestToures();
+    swiperInstructors();
   });
 });
 

@@ -25,7 +25,7 @@
             <span> Ближайшие туры </span>
           </div>
           <div class="closest-tours__buttons-wrapper slider-buttons">
-            <div class="swiper-button-prev">
+            <div class="closest-tours__swiper-button-prev swiper-button-prev">
               <button
                 class="closest-tours__button closest-tours__button--back focus-visible slider-buttons__button slider-buttons__button--back"
                 type="button">
@@ -35,7 +35,7 @@
                 </svg>
               </button>
             </div>
-            <div class="swiper-button-next">
+            <div class="closest-tours__swiper-button-next swiper-button-next">
               <button
                 class="closest-tours__button closest-tours__button--forward focus-visible slider-buttons__button slider-buttons__button--forward"
                 type="button">
@@ -263,55 +263,215 @@
           <h2> Обучение </h2>
           <span> Обучение </span>
         </div>
-        <p>
-          Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов
-          Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.
-        </p>
+        <div class="education__description-wrapper">
+          <p>
+            Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов
+            Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.
+          </p>
+        </div>
         <section class="education__instructors">
           <div class="education__instructors-title-arrows-wrapper">
             <h3> Наши инструкторы </h3>
-          </div>
-          <div class="education__instructors-buttons-wrapper slider-buttons">
-            <div class="swiper-button-prev">
-              <button
-                class="education__instructors-button education__instructors-button--back focus-visible slider-buttons__button slider-buttons__button--back"
-                type="button">
-                <span class="visually-hidden"> Назад </span>
-                <svg width="14" height="9">
-                  <use xlink:href="../../img/sprite.svg#arrow-left"></use>
-                </svg>
-              </button>
-            </div>
-            <div class="swiper-button-next">
-              <button
-                class="education__instructors-button education__instructors-button--forward focus-visible slider-buttons__button slider-buttons__button--forward"
-                type="button">
-                <span class="visually-hidden"> Вперёд </span>
-                <svg width="14" height="9">
-                  <use xlink:href="../../img/sprite.svg#arrow-left"></use>
-                </svg>
-              </button>
+            <div class="education__instructors-buttons-wrapper slider-buttons">
+              <div class="swiper-button-prev">
+                <button
+                  class="education__instructors-button education__instructors-button--back focus-visible slider-buttons__button slider-buttons__button--back"
+                  type="button">
+                  <span class="visually-hidden"> Назад </span>
+                  <svg width="14" height="9">
+                    <use xlink:href="../../img/sprite.svg#arrow-left"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="swiper-button-next">
+                <button
+                  class="education__instructors-button education__instructors-button--next focus-visible slider-buttons__button slider-buttons__button--forward"
+                  type="button">
+                  <span class="visually-hidden"> Вперёд </span>
+                  <svg width="14" height="9">
+                    <use xlink:href="../../img/sprite.svg#arrow-left"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
           <div class="education__instructors-swiper swiper">
             <div class="education__instructors-wrapper swiper-wrapper">
               <div class="education__instructors-slide swiper-slide">
                 <div class="education__instructors-image-wrapper">
-                  <img width="238" height="212" src="../../img/instructor-1-desktop.jpg" alt="Александр Прокофьев">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="../../img/instructor-1-mobile.webp 1x, ../../img/instructor-1-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="../../img/instructor-1-tablet.webp 1x, ../../img/instructor-1-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="../../img/instructor-1-desktop.webp 1x, ../../img/instructor-1-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="../../img/instructor-1-mobile.jpg 1x, ../../img/instructor-1-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="../../img/instructor-1-tablet.jpg 1x, ../../img/instructor-1-tablet@2x.jpg 2x">
+                    <img src="../../img/instructor-1-desktop.jpg" width="238" height="212"
+                      srcset="../../img/instructor-1-desktop@2x.jpg 2x" loading="lazy" alt="Александр Прокофьев">
+                  </picture>
                 </div>
                 <div class="education__instructors-name-vk">
                   <b> Александр Прокофьев </b>
-                  <a href="#">
+                  <a class="focus-visible" href="#">
                     <span class="visually-hidden"> Вконтакте </span>
-                    <svg width="14" height="9">
-                      <use xlink:href="../../img/sprite.svg#arrow-left"></use>
+                    <svg width="14" height="8">
+                      <use xlink:href="../../img/sprite.svg#vk"></use>
                     </svg>
                   </a>
                 </div>
                 <p> Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу. </p>
               </div>
+              <div class="education__instructors-slide swiper-slide">
+                <div class="education__instructors-image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="../../img/instructor-2-mobile.webp 1x, ../../img/instructor-2-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="../../img/instructor-2-tablet.webp 1x, ../../img/instructor-2-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="../../img/instructor-2-desktop.webp 1x, ../../img/instructor-2-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="../../img/instructor-2-mobile.jpg 1x, ../../img/instructor-2-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="../../img/instructor-2-tablet.jpg 1x, ../../img/instructor-2-tablet@2x.jpg 2x">
+                    <img src="../../img/instructor-2-desktop.jpg" width="238" height="212"
+                      srcset="../../img/instructor-2-desktop@2x.jpg 2x" loading="lazy" alt="Светлана Афиногенова">
+                  </picture>
+                </div>
+                <div class="education__instructors-name-vk">
+                  <b> Светлана Афиногенова </b>
+                  <a class="focus-visible" href="#">
+                    <span class="visually-hidden"> Вконтакте </span>
+                    <svg width="14" height="8">
+                      <use xlink:href="../../img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </div>
+                <p> Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе,
+                  чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни. </p>
+              </div>
+              <div class="education__instructors-slide swiper-slide">
+                <div class="education__instructors-image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="../../img/instructor-3-mobile.webp 1x, ../../img/instructor-3-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="../../img/instructor-3-tablet.webp 1x, ../../img/instructor-3-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="../../img/instructor-3-desktop.webp 1x, ../../img/instructor-3-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="../../img/instructor-3-mobile.jpg 1x, ../../img/instructor-3-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="../../img/instructor-3-tablet.jpg 1x, ../../img/instructor-3-tablet@2x.jpg 2x">
+                    <img src="../../img/instructor-3-desktop.jpg" width="238" height="212"
+                      srcset="../../img/instructor-3-desktop@2x.jpg 2x" loading="lazy" alt="Надежда Колесниченко">
+                  </picture>
+                </div>
+                <div class="education__instructors-name-vk">
+                  <b> Надежда Колесниченко </b>
+                  <a class="focus-visible" href="#">
+                    <span class="visually-hidden"> Вконтакте </span>
+                    <svg width="14" height="8">
+                      <use xlink:href="../../img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </div>
+                <p> Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках
+                  с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно. </p>
+              </div>
+              <div class="education__instructors-slide swiper-slide">
+                <div class="education__instructors-image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="../../img/instructor-4-mobile.webp 1x, ../../img/instructor-4-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="../../img/instructor-4-tablet.webp 1x, ../../img/instructor-4-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="../../img/instructor-4-desktop.webp 1x, ../../img/instructor-4-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="../../img/instructor-4-mobile.jpg 1x, ../../img/instructor-4-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="../../img/instructor-4-tablet.jpg 1x, ../../img/instructor-4-tablet@2x.jpg 2x">
+                    <img src="../../img/instructor-4-desktop.jpg" width="238" height="212"
+                      srcset="../../img/instructor-4-desktop@2x.jpg 2x" loading="lazy" alt="Федор Кайгородов">
+                  </picture>
+                </div>
+                <div class="education__instructors-name-vk">
+                  <b> Федор Кайгородов </b>
+                  <a class="focus-visible" href="#">
+                    <span class="visually-hidden"> Вконтакте </span>
+                    <svg width="14" height="8">
+                      <use xlink:href="../../img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </div>
+                <p> Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных районах
+                  Хибины, Архыз, много путешествует по&nbsp;Европе. </p>
+              </div>
+              <div class="education__instructors-slide swiper-slide">
+                <div class="education__instructors-image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="../../img/instructor-3-mobile.webp 1x, ../../img/instructor-3-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="../../img/instructor-3-tablet.webp 1x, ../../img/instructor-3-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="../../img/instructor-3-desktop.webp 1x, ../../img/instructor-3-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="../../img/instructor-3-mobile.jpg 1x, ../../img/instructor-3-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="../../img/instructor-3-tablet.jpg 1x, ../../img/instructor-3-tablet@2x.jpg 2x">
+                    <img src="../../img/instructor-3-desktop.jpg" width="238" height="212"
+                      srcset="../../img/instructor-3-desktop@2x.jpg 2x" loading="lazy" alt="Надежда Колесниченко">
+                  </picture>
+                </div>
+                <div class="education__instructors-name-vk">
+                  <b> Надежда Колесниченко </b>
+                  <a class="focus-visible" href="#">
+                    <span class="visually-hidden"> Вконтакте </span>
+                    <svg width="14" height="8">
+                      <use xlink:href="../../img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </div>
+                <p> Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках
+                  с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно. </p>
+              </div>
             </div>
           </div>
+        </section>
+        <section class="education__process">
+          <h3> Процесс обучения </h3>
+          <ol>
+            <li>
+              <svg width="25" height="25">
+                <use xlink:href="../../img/sprite.svg#map"></use>
+              </svg>
+              <p> Изучение спортивного туристского движения </p>
+            </li>
+            <li>
+              <svg width="25" height="25">
+                <use xlink:href="../../img/sprite.svg#boots"></use>
+              </svg>
+              <p> Подготовка и техническое снаряжение в походах </p>
+            </li>
+            <li>
+              <svg width="25" height="25">
+                <use xlink:href="../../img/sprite.svg#pine-tree"></use>
+              </svg>
+              <p> Лекции по окружающей среде, экологии и гигиене </p>
+            </li>
+            <li>
+              <svg width="25" height="25">
+                <use xlink:href="../../img/sprite.svg#mountain"></use>
+              </svg>
+              <p> Разъяснение сложности горных препятствий </p>
+            </li>
+          </ol>
         </section>
       </section>
       <section class="about-us">
