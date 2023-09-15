@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {swiperClosestToures} from './modules/closest-toures-swiper';
 import {swiperInstructors} from './modules/education-swiper';
+import {swiperFeedback} from './modules/feedback-swiper';
 
 // ---------------------------------
 
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     swiperClosestToures();
     swiperInstructors();
+    swiperFeedback();
   });
 });
 
