@@ -1,0 +1,146 @@
+.advantages {
+  padding: 63px 0 76px;
+  background-image: url('../../../../img/background/clouds-about-us.png');
+  background-repeat: no-repeat;
+  background-position: right 0 top 0;
+  position: relative;
+
+  @include vp-1199 {
+    background-image: none;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../img/background/clouds-advantages.png');
+    width: 705px;
+    height: 391px;
+    top: -170px;
+    left: 0;
+    z-index: -1; 
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+}
+
+.advantages__title-wrapper {
+  position: relative;
+  padding: 0;
+  margin: 0 auto 50px;
+  width: 95%;
+  max-width: 1200px;
+  text-align: center;
+  background-image: url('../../../../img/background/clouds-about-us.png');
+  background-repeat: no-repeat;
+  background-position: right 0 top 0;
+
+  @include vp-1199 {
+    margin-bottom: 50px;
+    width: 90%;
+    max-width: 1109px;
+    min-width: 678px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 18px;
+    max-width: 737px;
+    min-width: 290px;
+  }
+    
+  h2 {
+    color: rgba(45, 56, 63, 0.03);
+    font-size: 55px;
+    font-weight: $font-weight-extrabold;
+    line-height: 100%;
+    padding: 0;
+    margin: 0;
+
+    @include vp-1199 {
+      font-size: 40px;
+    }
+
+    @include vp-767 {
+      font-size: 26px;
+    }
+  }
+
+  span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5px;
+    font-size: 35px;
+    line-height: 100%;
+    font-weight: $font-weight-extrabold;
+    
+    @include vp-1199 {
+      font-size: 25px;
+      bottom: 3px;
+    }
+
+    @include vp-767 {
+      font-size: 22px;
+      bottom: 1px;
+    }
+  }
+}
+
+.advantages__swiper {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 30px;
+}
+
+.advantages__slide {
+  max-width: 380px;
+  height: 100%;
+  padding: 40px 20px;
+  border: 1px solid rgba(2, 102, 193, 0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-default-white;
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: $font-weight-semibold;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
+.advantages__svg-wrapper {
+  display: flex;
+  width: 54px;
+  height: 54px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-navy-blue;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.advantages__buttons-wrapper {
+  margin: 0 auto;
+  padding: 0;
+
+  @include vp-1199 {
+    display: none;
+  }
+}

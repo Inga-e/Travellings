@@ -3613,6 +3613,176 @@ button,
   font-weight: 300;
 }
 
+.advantages {
+  padding: 63px 0 76px;
+  background-image: url("../../../../img/background/clouds-about-us.png");
+  background-repeat: no-repeat;
+  background-position: right 0 top 0;
+  position: relative;
+}
+@media (max-width: 1199px) {
+  .advantages {
+    background-image: none;
+  }
+}
+.advantages::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../../../img/background/clouds-advantages.png");
+  width: 705px;
+  height: 391px;
+  top: -170px;
+  left: 0;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .advantages::before {
+    display: none;
+  }
+}
+
+.advantages__title-wrapper {
+  position: relative;
+  padding: 0;
+  margin: 0 auto 50px;
+  width: 95%;
+  max-width: 1200px;
+  text-align: center;
+  background-image: url("../../../../img/background/clouds-about-us.png");
+  background-repeat: no-repeat;
+  background-position: right 0 top 0;
+}
+@media (max-width: 1199px) {
+  .advantages__title-wrapper {
+    margin-bottom: 50px;
+    width: 90%;
+    max-width: 1109px;
+    min-width: 678px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__title-wrapper {
+    margin-bottom: 18px;
+    max-width: 737px;
+    min-width: 290px;
+  }
+}
+.advantages__title-wrapper h2 {
+  color: rgba(45, 56, 63, 0.03);
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 1199px) {
+  .advantages__title-wrapper h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__title-wrapper h2 {
+    font-size: 26px;
+  }
+}
+.advantages__title-wrapper span {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 5px;
+  font-size: 35px;
+  line-height: 100%;
+  font-weight: 800;
+}
+@media (max-width: 1199px) {
+  .advantages__title-wrapper span {
+    font-size: 25px;
+    bottom: 3px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__title-wrapper span {
+    font-size: 22px;
+    bottom: 1px;
+  }
+}
+
+.advantages__swiper {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.advantages__slide {
+  max-width: 380px;
+  height: 100%;
+  padding: 40px 20px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+}
+.advantages__slide h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 600;
+}
+.advantages__slide p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.advantages__svg-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 54px;
+  height: 54px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #0266c1;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.advantages__buttons-wrapper {
+  margin: 0 auto;
+  padding: 0;
+}
+@media (max-width: 1199px) {
+  .advantages__buttons-wrapper {
+    display: none;
+  }
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {

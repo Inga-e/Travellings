@@ -1,5 +1,3 @@
-import autoprefixer from "autoprefixer";
-
 const swiperFeedback = function () {
     // eslint-disable-next-line
     new Swiper('.feedback__swiper', {

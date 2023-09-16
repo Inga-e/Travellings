@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {swiperClosestToures} from './modules/closest-toures-swiper';
 import {swiperInstructors} from './modules/education-swiper';
 import {swiperFeedback} from './modules/feedback-swiper';
+import {swiperAdvantages} from './modules/advantages-swiper';
 
 // ---------------------------------
 
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     swiperClosestToures();
     swiperInstructors();
     swiperFeedback();
+    swiperAdvantages();
   });
 });
 
