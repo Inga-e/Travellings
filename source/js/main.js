@@ -5,6 +5,7 @@ import {swiperClosestToures} from './modules/closest-toures-swiper';
 import {swiperInstructors} from './modules/education-swiper';
 import {swiperFeedback} from './modules/feedback-swiper';
 import {swiperAdvantages} from './modules/advantages-swiper';
+import {swiperGallery} from './modules/gallery-swiper';
 
 // ---------------------------------
 
@@ -29,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     swiperInstructors();
     swiperFeedback();
     swiperAdvantages();
+    swiperGallery();
   });
 });
 

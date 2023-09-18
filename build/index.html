@@ -769,10 +769,152 @@
         </div>
       </section>
       <section class="gallery">
-        <h2> Фотогалерея </h2>
+        <div class="gallery__title-wrapper">
+          <h2> Фотогалерея </h2>
+          <span> Фотогалерея </span>
+        </div>
+        <div class="gallery__description-arrows-wrapper">
+          <p> Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото. Лучшие
+            фотографии украсят этот раздел нашего сайта. </p>
+          <div class="gallery__buttons-wrapper slider-buttons">
+            <div class="swiper-button-prev">
+              <button
+                class="gallery__button gallery__button--back focus-visible slider-buttons__button slider-buttons__button--back"
+                type="button">
+                <span class="visually-hidden"> Назад </span>
+                <svg width="14" height="9">
+                  <use xlink:href="../../img/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="swiper-button-next">
+              <button
+                class="gallery__button gallery__button--next focus-visible slider-buttons__button slider-buttons__button--forward"
+                type="button">
+                <span class="visually-hidden"> Вперёд </span>
+                <svg width="14" height="9">
+                  <use xlink:href="../../img/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__swiper swiper">
+          <div class="gallery__swiper-wrapper swiper-wrapper">
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image-wrapper">
+                <img width="275" height="449" src="../../img/gallery-1-desktop.jpg" alt="">
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image-wrapper">
+                <img width="298" height="179" src="../../img/gallery-2-desktop.jpg" alt="">
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image-wrapper">
+                <img width="298" height="265" src="../../img/gallery-3-desktop.jpg" alt="">
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image-wrapper">
+                <img width="275" height="449" src="../../img/gallery-4-desktop.jpg" alt="">
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image-wrapper">
+                <img width="298" height="179" src="../../img/gallery-5-desktop.jpg" alt="">
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image-wrapper">
+                <img width="298" height="265" src="../../img/gallery-6-desktop.jpg" alt="">
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image-wrapper">
+                <img width="275" height="449" src="../../img/gallery-7-desktop.jpg" alt="">
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image-wrapper">
+                <img width="298" height="179" src="../../img/gallery-2-desktop.jpg" alt="">
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image-wrapper">
+                <img width="298" height="265" src="../../img/gallery-3-desktop.jpg" alt="">
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image-wrapper">
+                <img width="275" height="449" src="../../img/gallery-4-desktop.jpg" alt="">
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image-wrapper">
+                <img width="298" height="179" src="../../img/gallery-5-desktop.jpg" alt="">
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image-wrapper">
+                <img width="298" height="265" src="../../img/gallery-6-desktop.jpg" alt="">
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image-wrapper">
+                <img width="275" height="449" src="../../img/gallery-7-desktop.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="questions">
-        <h2> Остались вопросы?</h2>
+        <div class="questions__content-wrapper">
+          <h2> Остались вопросы? </h2>
+          <p> Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации. </p>
+          <div class="questions__form-wrapper" data-form-validate="data-form-validate" data-callback="base">
+            <form class="questions__form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset>
+                <legend class="visually-hidden"> Контактные данные заявителя </legend>
+                <ul>
+                  <li>
+                    <label class="visually-hidden" for="name"> Как к вам обращаться? </label>
+                    <div class="questions__input-wrapper" data-validate-type="text" data-limitation="name"
+                      data-required>
+                      <input class="focus-visible" type="text" placeholder="Как к вам обращаться?" name="name" id="name"
+                        required>
+                    </div>
+                  </li>
+                  <li>
+                    <label class="visually-hidden" for="phone"> Телефон </label>
+                    <div class="questions__input-wrapper" data-validate-type="phone" data-on-input-validate
+                      data-required>
+                      <input class="focus-visible" type="tel" placeholder="Телефон" name="phone" id="phone" required>
+                    </div>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="focus-visible" type="submit"> Отправить </button>
+            </form>
+          </div>
+        </div>
+        <div class="questions__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="../../img/snow-forest-form-mobile.webp 1x, ../../img/snow-forest-form-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="../../img/snow-forest-form-tablet.webp 1x, ../../img/snow-forest-form-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="../../img/snow-forest-form-desktop.webp 1x, ../../img/snow-forest-form-desktop@2x.webp 2x">
+            <source media="(max-width: 767px)"
+              srcset="../../img/snow-forest-form-mobile.png 1x, ../../img/snow-forest-form-mobile@2x.png 2x">
+            <source media="(max-width: 1199px)"
+              srcset="../../img/snow-forest-form-tablet.png 1x, ../../img/snow-forest-form-tablet@2x.png 2x">
+            <img src="../../img/snow-forest-form-desktop.png" width="1440" height="800"
+              srcset="../../img/snow-forest-form-desktop.png@2x.jpg 2x" loading="lazy" alt="Заснеженный лес в горах">
+          </picture>
+        </div>
       </section>
       <section class="contacts">
         <h2> Контакты </h2>

@@ -1,0 +1,331 @@
+.questions {
+  position: relative;
+}
+
+.questions__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  
+  h2 {
+    font-size: 35px;
+    font-weight: $font-weight-extrabold;
+    line-height: 100%;
+    color: $color-default-white;
+    margin: 308px auto 0;
+    padding: 0;
+    margin-bottom: 20px;
+    max-width: 1200px;
+    width: 90%;
+    text-align: center;
+    z-index: 2;
+
+    @include vp-1199 {
+      min-width: 708px; 
+      max-width: 1140px; 
+      font-size: 25px; 
+      margin-top: 192px;
+      margin-bottom: 15px;
+    }
+
+    @include vp-767 {
+      min-width: 290px; 
+      max-width: 737px; 
+      font-size: 22px; 
+      margin-top: 181px;
+      margin-bottom: 14px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-default-white;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom:42px;
+    max-width: 1200px;
+    text-align: center;
+
+    @include vp-1199 {
+      min-width: 295px;
+      width: 40%;
+      max-width: 90%;
+      margin-bottom: 30px;
+    }
+
+    @include vp-767 {
+      font-size: 12px;
+      min-width: 290px;
+      width: 88%;
+      max-width: 737px;
+      margin-bottom: 26px;   
+    }
+  }
+}
+
+.questions__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 277px;
+
+  @include vp-1199 {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    max-width: 1109px;
+    min-width: 678px;
+    margin-bottom: 183px;
+  } 
+
+  @include vp-767 {
+    max-width: 737px;
+    min-width: 290px;
+    margin-bottom: 175px;
+  }
+
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    min-width: 710px;
+    margin-right: 30px;
+
+    @include vp-1199 {
+      display: flex;
+      flex-wrap: no-wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-width: 678px;
+      max-width: 1109px;
+      margin-right: 0;
+    }
+
+    @include vp-767 {
+      min-width: 290px;
+      max-width: 737px;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 710px;
+    width: 100%;
+
+    @include vp-1199 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0;
+      margin-bottom: 8px;
+      max-width: 100%;
+      width: 100%;
+      flex-wrap: no-wrap;
+    }
+
+    @include vp-767 {
+      margin-bottom: 1px;  
+    }
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    width: 47.7%;
+
+    @include vp-1199 {
+      margin-bottom: 7px; 
+      width: 38%; 
+      min-width: 266px; 
+    }
+
+    @include vp-767 {
+      width: 100%; 
+      min-width: 290px;  
+    }
+  }
+
+  li:not(:nth-child(2n)) {
+    margin-right: 30px;
+
+    @include vp-1199 {
+      margin-right: 0; 
+    }
+  }
+  
+  input {
+    width: 100%;
+    min-width: 340px;
+    border: 1px solid rgba(2, 102, 193, 0.10);
+    background-color: $color-default-white;
+    margin: 0;
+    padding: 22px 30px;
+    font-size: 16px;
+    line-height: 100%;
+
+    @include vp-1199 {
+      min-width: 266px;
+      font-size: 14px;
+      padding: 18px 15px;
+    }
+
+    @include vp-767 {
+      min-width: 290px; 
+    }
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 100%;
+      color: rgba(45, 56, 63, 0.5);
+
+      @include vp-1199 {
+        font-size: 14px;
+      }
+    }
+
+    &:hover {
+      border-color: $color-navy-blue;
+
+      &::placeholder {
+        color: $color-navy-blue;
+      }
+    }
+
+    &:active {
+      border-color: $color-resolution-blue;  
+      
+      &::placeholder {
+        color: $color-default-white;
+      }
+    }
+
+    &:focus-visible {
+      border-color: $color-resolution-blue; 
+
+      &::placeholder {
+        color: $color-default-white;
+      }
+    }
+
+    &:disabled {
+      border-color: rgba(2, 102, 193, 0.1); 
+      pointer-events: none;
+
+      &::placeholder {
+        color: $color-default-white;
+      }
+    }
+  }
+
+  button {
+    margin: 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: $font-weight-medium;
+    line-height: 150%;
+    background-color: $color-navy-blue;
+    border: 1px solid $color-navy-blue;
+    color: $color-default-white;
+    min-width: 238px;
+    width: 20%;
+    padding: 20px 30px;
+    cursor: pointer;
+    user-select: none;
+
+    @include vp-1199 {
+      min-width: 266px;
+      width: 38%;
+    }
+
+    @include vp-767 {
+      min-width: 290px;
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: $color-default-white;
+      color: $color-resolution-blue;
+      border-color: $color-navy-blue;
+    }
+
+    &:focus-visible {
+      background-color: $color-default-white;
+      color: $color-resolution-blue;
+      border-color: $color-navy-blue; 
+    }
+
+    &:active {
+      background-color: $color-resolution-blue;
+      color: $color-default-white;
+      border-color: $color-resolution-blue; 
+    }
+
+    &:disabled {
+      opacity: 0.1;
+      pointer-events: none;
+    }
+  }
+}
+
+.questions__input-wrapper {
+  &.is-invalid {
+    outline: 1px solid #ff121f;
+    outline-offset: -1px;
+  }
+}
+
+.questions__image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 800px;
+  z-index: -1;
+  background-color: #adb0ada0;
+
+  @include vp-1199 {
+    max-width: 1199px;
+    min-width: 768px;
+    min-height: 679px;
+  }
+
+  @include vp-767 {
+    max-width: 767px;
+    min-width: 320px;
+    min-height: 621px;
+  }
+
+  img {
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+    background-color: #adb0ada0;
+
+    @include vp-1199 {
+      max-width: 1199px;
+      width: 100%;
+    }
+
+    @include vp-767 {
+      max-width: 767px;
+      min-width: 320px;
+    }
+  }
+}
