@@ -18,7 +18,7 @@
     </header>
     <main>
       <h1 class="visually-hidden"> Путешествия </h1>
-      <section class="closest-tours">
+      <section class="closest-tours" id="tours">
         <div class="closest-tours__title-arrows-wrapper">
           <div class="closest-tours__title-wrapper">
             <h2> Ближайшие туры </h2>
@@ -258,7 +258,7 @@
           </svg>
         </a>
       </section>
-      <section class="education">
+      <section class="education" id="education">
         <div class="education__title-wrapper">
           <h2> Обучение </h2>
           <span> Обучение </span>
@@ -474,7 +474,7 @@
           </ol>
         </section>
       </section>
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <div class="about-us__text-content-wrapper">
           <div class="about-us__title-wrapper">
             <h2> О нас </h2>
@@ -513,7 +513,7 @@
           </picture>
         </div>
       </section>
-      <section class="feedback">
+      <section class="feedback" id="feedback">
         <div class="feedback__title-arrows-wrapper">
           <div class="feedback__title-wrapper">
             <h2> Отзывы </h2>
@@ -768,7 +768,7 @@
           </div>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="gallery__title-wrapper">
           <h2> Фотогалерея </h2>
           <span> Фотогалерея </span>
@@ -916,22 +916,95 @@
           </picture>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="contacts__title-wrapper">
           <h2> Контакты </h2>
           <span> Контакты </span>
         </div>
         <div class="contacts__text-wrapper">
-
+          <p> Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости. Мы&nbsp;будем
+            рады поделиться увлекательными историями и&nbsp;подобрать для вас тур. </p>
+          <ul>
+            <li>
+              <b> Телефон </b>
+              <a href="tel:+79837454545"> 8 983 745 45 45 </a>
+            </li>
+            <li>
+              <b> E-mail </b>
+              <a href="mailto:info@lifetour.com"> info@lifetour.com </a>
+            </li>
+            <li>
+              <b> Адрес </b>
+              <address> г. Москва, пр-т Мира, д. 14, офис 101 </address>
+            </li>
+          </ul>
         </div>
-        <div class="contacts__map" id="os-map">
-
-        </div>
+        <div class="contacts__map" id="os-map"></div>
       </section>
     </main>
-    <footer>
-      footer
-      <!--  <div class="container"></div>-->
+    <footer class="main-footer">
+      <div class="main-footer__logo-nav-tel-wrapper">
+        <a class="main-footer__logo focus-visible" href="#">
+          <span class="visually-hidden"> Логотип </span>
+          <svg width="205" height="60">
+            <use xlink:href="../../img/sprite.svg#logotype"></use>
+          </svg>
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a class="focus-visible" href="#tours"> Туры </a>
+            </li>
+            <li>
+              <a class="focus-visible" href="#education"> Обучение </a>
+            </li>
+            <li>
+              <a class="focus-visible" href="#about-us"> О нас </a>
+            </li>
+            <li>
+              <a class="focus-visible" href="#feedback"> Отзывы </a>
+            </li>
+            <li>
+              <a class="focus-visible" href="#gallery"> Фотографии </a>
+            </li>
+            <li>
+              <a class="focus-visible" href="#contacts"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-footer__phone-wrapper">
+          <a class="main-footer__phone focus-visible" href="tel:+78007253232"> 8 800 725 32 32 </a>
+        </div>
+      </div>
+      <ul class="main-footer__socials-list">
+        <li>
+          <span class="visually-hidden"> Вконтакте </span>
+          <a class="focus-visible" href="#">
+            <svg width="16" height="9">
+              <use xlink:href="../../img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <span class="visually-hidden"> Одноклассники </span>
+          <a class="focus-visible" href="#">
+            <svg width="9" height="16">
+              <use xlink:href="../../img/sprite.svg#ok"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <span class="visually-hidden"> Реддит </span>
+          <a class="focus-visible" href="#">
+            <svg width="14" height="15">
+              <use xlink:href="../../img/sprite.svg#reddit"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <small>
+        <a class="main-footer__privecy-policy focus-visible" href="#"> Политика конфиденциальности </a>
+      </small>
     </footer>
   </div>
   <script src="../../js/vendor.min.js"></script>

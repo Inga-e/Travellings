@@ -1,6 +1,6 @@
 .advantages {
   padding: 63px 0 76px;
-  background-image: url('../../../../img/background/clouds-about-us.png');
+  background-image: url("../../../../img/background/clouds-about-us.png");
   background-repeat: no-repeat;
   background-position: right 0 top 0;
   position: relative;
@@ -12,12 +12,12 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: url('../../../../img/background/clouds-advantages.png');
+    background-image: url("../../../../img/background/clouds-advantages.png");
     width: 705px;
     height: 391px;
     top: -170px;
     left: 0;
-    z-index: -1; 
+    z-index: -1;
 
     @include vp-1199 {
       display: none;
@@ -32,7 +32,7 @@
   width: 95%;
   max-width: 1200px;
   text-align: center;
-  background-image: url('../../../../img/background/clouds-about-us.png');
+  background-image: url("../../../../img/background/clouds-about-us.png");
   background-repeat: no-repeat;
   background-position: right 0 top 0;
 
@@ -48,7 +48,7 @@
     max-width: 737px;
     min-width: 290px;
   }
-    
+
   h2 {
     color: rgba(45, 56, 63, 0.03);
     font-size: 55px;
@@ -74,7 +74,7 @@
     font-size: 35px;
     line-height: 100%;
     font-weight: $font-weight-extrabold;
-    
+
     @include vp-1199 {
       font-size: 25px;
       bottom: 3px;
@@ -100,7 +100,7 @@
   max-width: 380px;
   height: 100%;
   padding: 40px 20px;
-  border: 1px solid rgba(2, 102, 193, 0.10);
+  border: 1px solid rgba(2, 102, 193, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
