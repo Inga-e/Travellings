@@ -3,12 +3,13 @@
   "version": "2.0.0",
   "type": "module",
   "description": "Стартовый шаблон сборки Лиги А",
+  "homepage": "https://inga-e.github.io/Travellings",
   "browserslist": [
     "last 3 versions",
     "IE 11",
     "Firefox ESR"
   ],
-  "homepage": "https://inga-e.github.io/Travellings/",
+
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --customSyntax postcss-scss",
