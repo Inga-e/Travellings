@@ -4,6 +4,7 @@
 @import "vendor/normalize";
 // Swiper 8.4.7
 @import "vendor/swiper";
+@import "vendor/leaflet";
 
 // Global
 // ---------------------------------
@@ -17,6 +18,8 @@
 
 // Blocks
 // ---------------------------------
+@import "blocks/main-header.scss";
+@import "blocks/hero-block.scss";
 @import "blocks/closest-tours.scss";
 @import "blocks/education.scss";
 @import "blocks/slider-buttons.scss";

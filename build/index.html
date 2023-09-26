@@ -12,12 +12,161 @@
 
 <body>
   <div class="wrapper">
-    <header>
-      <!-- <div class="container"></div>-->
-      header
+    <header class="main-header">
+      <div class="main-header__content-wrapper">
+        <a class="main-header__logo focus-visible" href="#">
+          <span class="visually-hidden"> Логотип </span>
+          <svg width="205" height="62">
+            <use xlink:href="../../img/sprite.svg#logotype"></use>
+          </svg>
+        </a>
+        <button type="button" class="main-header__menu-button">
+          <span class="visually-hidden"> Открыть меню </span>
+          <svg width="205" height="62">
+            <use xlink:href="../../img/sprite.svg#menu"> </use>
+          </svg>
+        </button>
+        <nav class="main-header__nav">
+          <ul>
+            <li>
+              <a class="focus-visible" href="#tours"> Туры </a>
+            </li>
+            <li>
+              <a class="focus-visible" href="#education"> Обучение </a>
+            </li>
+            <li>
+              <a class="focus-visible" href="#about-us"> О нас </a>
+            </li>
+            <li>
+              <a class="focus-visible" href="#feedback"> Отзывы </a>
+            </li>
+            <li>
+              <a class="focus-visible" href="#gallery"> Фотографии </a>
+            </li>
+            <li>
+              <a class="focus-visible" href="#contacts"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header__phone-wrapper">
+          <a class="main-header__phone focus-visible" href="tel:+78007253232"> 8 800 725 32 32 </a>
+        </div>
+      </div>
     </header>
     <main>
       <h1 class="visually-hidden"> Путешествия </h1>
+      <section class="hero-block">
+        <div class="hero-block__swiper swiper">
+          <div class="hero-block__swiper-wrapper swiper-wrapper">
+            <div class="hero-block__swiper-slide swiper-slide">
+              <div class="hero-block__content-wrapper">
+                <div class="hero-block__text-content">
+                  <h2> Захватывающие вершины Кавказа </h2>
+                  <p> В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите
+                    восход на&nbsp;вершину горы Чегет. </p>
+                  <a href="#"> Смотреть тур </a>
+                </div>
+                <div class="hero-block__video-wrapper">
+                  <div class="hero-block__image-button-wrapper">
+                    <div class="hero-block__image-wrapper">
+                      <img width="482" height="317" src="../../img/hero-back-video-desktop.png" alt="">
+                    </div>
+                    <button class="focus-visible" type="button" data-video-button>
+                      <span class="visually-hidden">Пуск</span>
+                    </button>
+                  </div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw?si=pacKV62RwDj8dQL9"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+              <div class="hero-block__suggestion-pagination-wrapper">
+                <ol>
+                  <li> 6 дней/5 ночей </li>
+                  <li> Высокая сложность </li>
+                </ol>
+                <ul>
+                  <li>
+                    <button type="button">
+                      <span class="visually-hidden">
+                        Первый слайд
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <span class="visually-hidden">
+                        Второй слайд
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <span class="visually-hidden">
+                        Третий слайд
+                      </span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="hero-block__image-wrapper">
+                <img width="1440" height="800" src="../../img/hero-photo1-desktop.png" alt="">
+              </div>
+            </div>
+            <div class="hero-block__swiper-slide swiper-slide">
+              <div class="hero-block__content-wrapper">
+                <div class="hero-block__text-content">
+                  <h2> Невероятная природа Камчатки </h2>
+                  <p> Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие
+                    по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире. </p>
+                  <a href="#"> Смотреть тур </a>
+                </div>
+                <div class="hero-block__two-images-container">
+                  <div class="hero-block__first-image-wrapper">
+                    <img width="" height="" src="" alt="">
+                  </div>
+                  <div class="hero-block__second-image-wrapper">
+                    <img width="" height="" src="" alt="">
+                  </div>
+                </div>
+                <div class="hero-block__suggestion-pagination-wrapper">
+                  <ol>
+                    <li> 9 дней/10 ночей </li>
+                    <li> Средняя сложность </li>
+                  </ol>
+                  <ul>
+                    <li>
+                      <button type="button">
+                        <span class="visually-hidden">
+                          Первый слайд
+                        </span>
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button">
+                        <span class="visually-hidden">
+                          Второй слайд
+                        </span>
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button">
+                        <span class="visually-hidden">
+                          Третий слайд
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="hero-block__image-wrapper">
+                  <img width="1440" height="800" src="../../img/hero-photo2-desktop.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
       <section class="closest-tours" id="tours">
         <div class="closest-tours__title-arrows-wrapper">
           <div class="closest-tours__title-wrapper">
@@ -818,7 +967,7 @@
             </div>
             <div class="gallery__slide swiper-slide">
               <div class="gallery__image-wrapper">
-                <img width="275" height="449" src="../../img/gallery-4-desktop.jpg" alt="">
+                <img width="272" height="449" src="../../img/gallery-4-desktop.jpg" alt="">
               </div>
             </div>
             <div class="gallery__slide swiper-slide">
@@ -833,7 +982,7 @@
             </div>
             <div class="gallery__slide swiper-slide">
               <div class="gallery__image-wrapper">
-                <img width="275" height="449" src="../../img/gallery-7-desktop.jpg" alt="">
+                <img width="276" height="449" src="../../img/gallery-7-desktop.jpg" alt="">
               </div>
             </div>
             <div class="gallery__slide swiper-slide">

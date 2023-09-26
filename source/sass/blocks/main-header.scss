@@ -1,0 +1,123 @@
+.main-header {
+  max-width: 1200px;
+  width: 95%;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 2;
+}
+
+.main-header__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+  outline-style: solid;
+  outline-color: #00f7ffee;
+  position: absolute;
+  z-index: 1;
+}
+
+.main-header__logo {
+  color: $color-default-white;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-default-white;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-header__nav {
+  padding: 0;
+  margin: 20px auto;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    flex-wrap: wrap;
+    min-width: 571px;
+    max-width: 600px;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  a {
+    margin: 0;
+    padding: 3px 5px;
+    color: $color-default-white;
+    font-size: 16px;
+    line-height: 100%;
+    border: 1px solid transparent;
+
+    &:hover {
+      border-bottom-color: $color-default-white;
+    }
+
+    &:focus-visible {
+      border-color: $color-default-white
+    }
+
+    &:active {
+      border-bottom-color: transparent;
+    }
+
+    &--no-action {
+      color: rgba(255, 255, 255, 0.5);
+      pointer-events: none;
+    }
+  }
+}
+
+.main-header__menu-button {
+  display: none;
+}
+
+.main-header__phone-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+}
+
+.main-header__phone {
+  color: $color-default-white;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: $font-weight-semibold;
+
+  &:hover {
+    color: $color-resolution-blue;
+    border: none;
+  }
+
+  &:focus-visible {
+    color: $color-resolution-blue;
+    border: none;
+  }
+
+  &:active {
+    color: $color-navy-blue;
+    border: none;
+  }
+
+  &--no-action {
+    color: rgba(2, 102, 193, 0.1);
+    pointer-events: none;
+  }
+}
