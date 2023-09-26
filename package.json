@@ -8,6 +8,7 @@
     "IE 11",
     "Firefox ESR"
   ],
+  "homepage": "https://inga-e.github.io/Travellings/",
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --customSyntax postcss-scss",
